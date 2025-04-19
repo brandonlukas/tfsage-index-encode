@@ -1,0 +1,14 @@
+downloads_dir: "/mnt/wdssd/tfsage/encode/downloads"
+data_dir: "/mnt/wdssd/tfsage/encode/data"
+
+resources:
+  index: "resources/index.tsv"
+  index_parquet: "/mnt/wdssd/tfsage/encode/resources/index.parquet"
+
+embedding_methods:
+  - CCAIntegration
+  - HarmonyIntegration
+  - JointPCAIntegration
+  - RPCAIntegration
+  - FastMNNIntegration
+  - none
