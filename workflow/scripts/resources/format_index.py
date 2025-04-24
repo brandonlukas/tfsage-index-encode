@@ -14,6 +14,7 @@ def load_basic(file_path):
         dd.read_csv(file_path, sep="\t", dtype=str)
         .query("`Biosample organism` == 'Homo sapiens'")
         .query("`File type` == 'bed'")
+        .query("Assay != 'Histone ChIP-seq' | `Experiment target` == 'H3K27ac-human'")
     )
     df = ddf.compute()
     return df

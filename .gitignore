@@ -1,2 +1,3 @@
 .snakemake
 resources/index.tsv
+upload_box.sh
